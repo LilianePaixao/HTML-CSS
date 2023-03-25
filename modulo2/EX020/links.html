@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Links</title>
+
+	<style>
+		a{
+			text-decoration: none;
+			color:black;
+			font-weight: bolder;
+		}
+		
+		a:active{
+			background-color: yellow;
+		}
+
+		a:visited{
+			color:red;
+		}
+
+		a:hover{
+			background-color: yellow;
+			text-decoration: underline;
+			color:black
+		}
+
+		a::after{
+			content:'[link]';
+			text-decoration:none;
+			font-weight: normal;
+			color:darkgray
+
+		}
+
+		a::before{
+			content:'✁'
+		}
+		a::after{
+			content:' ✁';
+			color:red;
+
+		}
+
+		.especial::after{
+			color:blue;
+		}
+	</style>
+
+
+</head>
+<body>
+	<h1>Personalizando links</h1>
+
+	<ul>
+		
+			<li><a href="https://github.com/LilianePaixao" target="_blank">Repositório Github</a></li>
+		
+		
+			<li><a href="https://github.com/LilianePaixao" class="especial">Canal do Youtube</a></li>
+		
+		
+			<li><a href="https://github.com/LilianePaixao">Site em vídeo </a> </li>
+		
+	</ul>
+	
+</body>
+</html>
